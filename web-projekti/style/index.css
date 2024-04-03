@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.big-slot {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    height: 25vh;
+}
+
+.small-slot {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px;
+}

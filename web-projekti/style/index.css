@@ -1,21 +1,37 @@
-.grid-container {
+.pohja {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    background-color: rgb(127, 255, 255);
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+    grid-gap: 20px;
+    min-height: 90vh;
 }
 
-.big-slot {
-    grid-column: 1 / span 3;
-    grid-row: 1;
-    background-color: lightblue;
-    text-align: center;
-    padding: 20px;
-    height: 25vh;
+#osa1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: 2vh;
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.small-slot {
-    background-color: lightgreen;
+.osa {
     text-align: center;
-    padding: 20px;
+    border: 2px solid black;
+    background-color: aquamarine;
+    padding: 3.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#pisteet {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

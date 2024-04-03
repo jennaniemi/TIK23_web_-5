@@ -5,5 +5,5 @@ Github, discord - henkilön nimi:
 jennaniemi, jenen. - Jenna Niemi
 EetuLas, Pumatsu - Eetu Lassila
 leevimmikkonen, player4567 - Leevi Mikkonen
-minttuelvira, mintttu - Minttu 
+minttuelvira, mintttu - Minttu Tervamäki
 PaulusPai, Paletsu - Paulus Päivärinta

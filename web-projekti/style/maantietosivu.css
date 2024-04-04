@@ -1,0 +1,66 @@
+body {
+    background-color: #a8deb3;
+}
+
+#maantieto {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(72, 128, 67);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+#maantieto h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#maantieto p {
+    font-size: 1.5em;
+}
+
+#peli {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#peli p {
+    font-size: 1.2em;
+}
+
+#peli h2 {
+    font-size: 2em;
+}
+
+
+#peli1 {
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#vastaus {
+    font-size: 1em;
+    padding: 10px;
+    margin: 15px;
+}
+
+#tarkistus {
+    margin: 0 auto;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #peli {
+        width: 300px;
+    }
+  }

@@ -5,7 +5,7 @@ body {
 #maantieto {
     display: flex;
     flex-direction: column;
-    background-color: rgb(72, 128, 67);
+    background-color: #80b18b;
     padding: 30px;
     border-radius: 25px;
 }
@@ -56,6 +56,44 @@ body {
     padding: 10px;
 }
 
+/* Navigaation CSS */
+
+.nav {
+    background-color: #4e7b58;
+    overflow: hidden;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+
+.nav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.nav a:hover {
+    background-color: #80b18b;
+    border-radius: 10px;
+}
+
+.nav a.active {
+    background-color: #80b18b;
+    border-radius: 10px;
+}
+
+.nav .icon {
+    display: none;
+}
+
+/* Navigaation CSS PÄÄTTYY */
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -64,3 +102,30 @@ body {
         width: 300px;
     }
   }
+
+/* Navigaation responsiivisuus */
+
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+.nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  }
+}

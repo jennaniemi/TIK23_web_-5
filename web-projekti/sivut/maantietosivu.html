@@ -26,20 +26,25 @@
     <div id="maantieto">
         <h1>MAANTIETO</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisi mauris. Vivamus a dictum sem. Mauris blandit, ligula a scelerisque imperdiet, tellus lacus malesuada risus, vitae placerat urna lacus a justo. Aenean in tellus non elit dapibus condimentum. Aliquam erat volutpat. Ut pellentesque, ex et vestibulum consectetur, nisi ipsum tincidunt mi, id ullamcorper nulla quam mattis dolor. Aenean sodales mauris mi, nec ultrices nulla rhoncus vel. 
+           Tällä sivulla pääset pelaamaan maantietoon liittyviä pelejä! 
         </p>
     </div>
 
     <div id="peli">
-        <h2>Pelin ohjeet</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisi mauris. Vivamus a dictum sem. Mauris blandit, ligula a scelerisque imperdiet, tellus lacus malesuada risus, vitae placerat urna lacus a justo. Aenean in tellus non elit dapibus condimentum. Aliquam erat volutpat. Ut pellentesque, ex et vestibulum consectetur, nisi ipsum tincidunt mi, id ullamcorper nulla quam mattis dolor. Aenean sodales mauris mi, nec ultrices nulla rhoncus vel.</p>
+        <h2>Totta vai Tarua?</h2>
+        <p>Alla näet väitteen. Valitse, onko väite mielestäsi totta vai tarua! Kysymykset vaikenevat pidemmälle edetessä. </p>
     
-        <div id="peli1">
-        <h3 id="kysymys">Kysymys</h3>
+    
+        <!--Totta vai tarua peli-->
+    <div id="kysymykset">
+        <div id="kysymys"></div>
+        <button onClick="vastaus('totta')"  id="kysymysTotta">Totta</button>
+        <button onClick="vastaus('tarua')"  id="kysymysTarua">Tarua</button>
+        <div id="vastauksen_selitys"></div>
+        <div id="pisteet"></div>
+    </div>
 
-        <input type="text" id="vastaus" placeholder="Kirjoita vastaus tähän">
-        <button id="tarkistus">Tarkista</button>
-        </div>
+
     </div>
 
 

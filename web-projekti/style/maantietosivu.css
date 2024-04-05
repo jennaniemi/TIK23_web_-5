@@ -17,6 +17,7 @@ body {
 
 #maantieto p {
     font-size: 1.5em;
+    text-align: center;
 }
 
 #peli {
@@ -36,25 +37,28 @@ body {
     font-size: 2em;
 }
 
-
-#peli1 {
-    font-size: 1.4em;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#vastaus {
-    font-size: 1em;
+#kysymykset div {
     padding: 10px;
-    margin: 15px;
+    font-size: 1.2em;
+    
 }
 
-#tarkistus {
-    margin: 0 auto;
-    font-size: 0.8em;
+#kysymykset button {
     padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
 }
+
+#kysymysTotta {
+    background-color: #62db7c;
+}
+
+#kysymysTarua {
+    background-color: #c64141;
+}
+
 
 /* Navigaation CSS */
 

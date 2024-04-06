@@ -14,30 +14,47 @@
         <h1>English</h1>
         <h3>Welcome to the english part of this website! Here you will lorem ipsum...</h3>
     </div>
-    <div>
-        <h4>1.</h4>
-        <p>Fill the missing word</p>
-        <div>
-            <p>a) example ____ here</p>
-            <input id="word1" type="text"/>
-            <button id="button1">Quess</button>
+    <div id="flex">
+        <div id="main_part">
+            <div>
+                <h4>1.</h4>
+                <p>Fill the missing word</p>
+                <div>
+                    <p>a) example ____ here</p>
+                    <input id="word1" type="text"/>
+                    <button id="button1">Quess</button>
+                </div>
+                <div>
+                    <p>b) missing ____ here</p>
+                    <input id="word2" type="text"/>
+                    <button id="button2">Quess</button>
+                </div>
+                <p><output id="output1">0</output>/2</p>
+            </div>
+            <div>
+                <h4>2.</h4>
+                <p>Translate the given word to english</p>
+                <div>
+                    <p>peruna</p>
+                    <input id="word3" type="text">
+                    <button id="button3">Quess</button>
+                </div>
+                <p><output id="output2">0</output>/1</p>
+            </div>
         </div>
         <div>
-            <p>b) missing ____ here</p>
-            <input id="word2" type="text"/>
-            <button id="button2">Quess</button>
+            <table>
+                <tr>
+                    <td id="ta1">  </td>
+                </tr>
+                <tr>
+                    <td id="ta2">  </td>
+                </tr>
+                <tr>
+                    <td id="ta3">  </td>
+                </tr>
+            </table>
         </div>
-        <p><output id="output1">0</output>/2</p>
-    </div>
-    <div>
-        <h4>2.</h4>
-        <p>Translate the given word to english</p>
-        <div>
-            <p>peruna</p>
-            <input id="word3" type="text">
-            <button id="button3">Quess</button>
-        </div>
-        <p><output id="output2">0</output>/1</p>
     </div>
     <script src="../js/englantisivu.js"></script>
 </body>

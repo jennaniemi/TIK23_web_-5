@@ -1,0 +1,21 @@
+#flex {
+    display: flex;
+}
+
+#main_part {
+    flex: 1;
+    flex-direction: column;
+    flex: 1;
+}
+
+table {
+    display: flex;
+    flex: 2;
+    border: 1px solid black;
+}
+
+table tr td {
+    width: 2em;
+    height: 10em;
+    background-color: red;
+}

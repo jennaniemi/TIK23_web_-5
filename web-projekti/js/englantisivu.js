@@ -1,4 +1,4 @@
-let num = 0
+let num = 0;
 
 function color() { //funktio 4
     num++; //numero kasvaa
@@ -8,10 +8,14 @@ function color() { //funktio 4
 };
 
 function correct(amount, point) { //funktio 3
-    if (parseInt(point.textContent) != amount) { //outputissa oleva kirjain luku muutetaan oikeaksi luvuksi ja verrataan tehtävien määrään
-        let correct = parseInt(point.textContent)+1; //jos tehtäviä ei ollut tehty rajattu määrä tehtyjen tehtävien määrä kasvaa
+    let currentCount = parseInt(point.textContent);
+    if (currentCount != amount) { //outputissa oleva kirjain luku muutetaan oikeaksi luvuksi ja verrataan tehtävien määrään
+        let correct = currentCount + 1; //jos tehtäviä ei ollut tehty rajattu määrä tehtyjen tehtävien määrä kasvaa
         point.innerHTML = correct; //output päivittyy
         alert("correct!"); //palauttaa correctin
+        if (correct === amount) { //jos tehtävän kaikki kohdat on suoritettu
+            color() //palkki etenee
+        };
     };
 };
 
@@ -20,7 +24,6 @@ function trial(button, inpt, answer, amount, point) { //funktio 2
         if (!button.dataset.incremented) { //jos tehtävä on mennyt oikein ja nappi ei ole käytetty
         correct(amount, point); //funktio correct käynnistyy
         button.dataset.incremented = true; //nappi muuttuu käytetyksi, jolloin ei voi laittaa oikeaa vastausta uudelleen
-        color()
         };
     } else {
         alert("false."); //väärä vastaus palauttaa falsen

@@ -16,6 +16,7 @@ var pisteet = 0;
 var kysymys
 var selitys = document.getElementById('vastauksen_selitys')
 var nextButton = document.getElementById('seuraavaButton')
+var tulos = document.getElementById('oikein-vaarin')
 
 // Käytetään KysymysIndex laskemaan, monesko kysymys menossa
 var KysymysIndex = 0;
@@ -53,9 +54,9 @@ function seuraava() {
     document.getElementById('kysymysTotta').style.display = 'inline';
     document.getElementById('kysymysTarua').style.display = 'inline';
     
-    // selitys sekä seuraava- nappi poistetaan näkyvistä pelin selkeyttämiseksi
+    // selitys sekä seuraava- nappi + tulos poistetaan näkyvistä pelin selkeyttämiseksi
     selitys.style.display = 'none';
-
+    tulos.style.display = 'none';
     nextButton.style.display = 'none';
 
     
@@ -68,15 +69,18 @@ function vastaus(kayttajanVastaus) {
     if (kayttajanVastaus === oikeaVastaus) {
         pisteet++;
         document.getElementById('pisteet').innerText = "Pisteet: " + pisteet;
-        alert("Oikein!");
+        tulos.innerText = "Oikein! +1p"
+        tulos.style.color = 'green';
     } else {
-        alert("Väärin!");
+        tulos.innerText = "Väärin! 0p"
+        tulos.style.color = 'red';
     }
 
     // Oikean vastauksen selitys sekä totta - ja tarua nappejen piilotus + kysymyksen piilotus (seuraava- napin ajaksi)
     var selitysTeksti = Kysymykset[KysymysIndex - 1].selitys;
     selitys.innerText = selitysTeksti;
     selitys.style.display = 'inline';
+    tulos.style.display = 'inline';
     document.getElementById('kysymys').style.display = 'none';
     document.getElementById('kysymysTotta').style.display = 'none'; 
     document.getElementById('kysymysTarua').style.display = 'none';

@@ -1,4 +1,11 @@
 let num = 0;
+const full = document.querySelector("#full");
+
+function countAll() {
+    let newCorrect = parseInt(full.textContent);
+    newCorrect++;
+    full.innerHTML = newCorrect;
+};
 
 function color() { //funktio 4
     num++; //numero kasvaa
@@ -15,6 +22,7 @@ function correct(amount, point) { //funktio 3
         alert("correct!"); //palauttaa correctin
         if (correct === amount) { //jos tehtävän kaikki kohdat on suoritettu
             color() //palkki etenee
+            countAll() //ratkaistujen tehtävien lukumäärä kasvaa
         };
     };
 };
@@ -35,6 +43,17 @@ function guess(button, inpt, answer, amount, point) { //funktio 1
         trial(button, inpt.value, answer, amount, point); //alkaa uusi trial funktio
     });
 };
+
+const infoButton = document.querySelector("#infobutton")
+const infoContent = document.querySelector("#infocontent")
+
+infoButton.addEventListener('click', () => {
+    if (infoContent.style.display === 'none') {
+        infoContent.style.display = 'block';        
+    } else {
+        infoContent.style.display = 'none';
+    }; 
+});
 
 //Template
 //const button<x> = document.querySelector("#button<x>");

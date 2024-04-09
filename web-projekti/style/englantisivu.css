@@ -15,7 +15,25 @@ table {
 }
 
 table tr td {
-    width: 2em;
+    width: 2.4em;
     height: 10em;
     background-color: red;
+}
+
+#infobutton {
+    width: 3.5em;
+}
+
+#infocontent {
+    display: none;
+}
+
+#fullp {
+    float: right;
+    border: 1px solid black;
+    width: 1.4em;
+}
+
+#bonus {
+    height: 100em;
 }

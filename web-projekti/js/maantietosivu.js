@@ -17,6 +17,7 @@ var kysymys
 var selitys = document.getElementById('vastauksen_selitys')
 var nextButton = document.getElementById('seuraavaButton')
 var tulos = document.getElementById('oikein-vaarin')
+var aloitaPeli = document.getElementById('start')
 
 // Käytetään KysymysIndex laskemaan, monesko kysymys menossa
 var KysymysIndex = 0;
@@ -29,6 +30,20 @@ var Kysymykset = [
     { kysymys: 'Pohjois-Amerikka on pinta-alaltaan maailman toiseksi suurin maanosa.', vastaus: 'tarua', selitys: 'Tarua! Afrikka on pinta-alaltaan maailman toiseksi suurin maanosa!' },
     { kysymys: 'Ekvaattori on toinen nimitys päiväntasaajalle.', vastaus: 'totta', selitys: 'Totta, ekvaattori on toinen nimitys päiväntasaajalle!' },
 ];  
+
+
+// Funktio pelin aloittamiselle - piilotetaan aloitusnappi sekä pelin ohje, sekä näytetään kaikki tarvittavat pelin osat.
+function startGame() {
+
+    aloitaPeli.style.display = 'none';
+    document.getElementById('kysymys').style.display = 'inline';
+    document.getElementById('kysymysTotta').style.display = 'inline';
+    document.getElementById('kysymysTarua').style.display = 'inline';
+    document.getElementById('pelinOhje').style.display = 'none';
+}
+
+
+
 
 // Luodaan funktio, joka näyttää kysymykset järjestyksessä, ja piilottaa totta - ja tarua -napit kysymysten päätyttyä.
 function seuraavaKysymys() {

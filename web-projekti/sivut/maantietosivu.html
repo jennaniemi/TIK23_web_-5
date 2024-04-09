@@ -32,15 +32,18 @@
 
     <div id="peli">
         <h2>Totta vai Tarua?</h2>
-        <p>Alla näet väitteen. Valitse, onko väite mielestäsi totta vai tarua! Kysymykset vaikenevat pidemmälle edetessä. </p>
+        <p id="pelinOhje">Tervetuloa maantietopeliin, jossa pääset haastamaan itsesi totta- vai tarua pelin avulla! Sinun tehtävänäsi on selvittää, onko esitetty väite totta vai tarua. Oletko valmis haasteeseen? Paina nappia aloittaaksesi!</p>
     
     
         <!--Totta vai tarua peli-->
     <div id="kysymykset">
-        <div id="kysymys"></div>
+
+        <button onClick = "startGame()" id="start">Aloita Peli</button>
+
+        <div id="kysymys" style="display: none;"></div>
         <br>
-        <button onClick="vastaus('totta')"  id="kysymysTotta">Totta</button>
-        <button onClick="vastaus('tarua')"  id="kysymysTarua">Tarua</button>
+        <button onClick="vastaus('totta')"  id="kysymysTotta" style="display: none;" >Totta</button>
+        <button onClick="vastaus('tarua')"  id="kysymysTarua" style="display: none;" >Tarua</button>
         <div id="oikein-vaarin"></div>
         <br>
         <br>

@@ -44,14 +44,14 @@ function guess(button, inpt, answer, amount, point) { //funktio 1
     });
 };
 
-const infoButton = document.querySelector("#infobutton")
+const infoButton = document.querySelector("#infobutton") 
 const infoContent = document.querySelector("#infocontent")
 
-infoButton.addEventListener('click', () => {
-    if (infoContent.style.display === 'none') {
-        infoContent.style.display = 'block';        
-    } else {
-        infoContent.style.display = 'none';
+infoButton.addEventListener('click', () => { //info nappai painetaan
+    if (infoContent.style.display === 'none') { //jos info ei näy
+        infoContent.style.display = 'block'; //se paljastuu
+    } else { //muuten
+        infoContent.style.display = 'none'; //se menee piiloon
     }; 
 });
 

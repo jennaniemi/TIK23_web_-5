@@ -16,6 +16,8 @@ var pisteet = 0;
 var kysymys
 var selitys = document.getElementById('vastauksen_selitys')
 var nextButton = document.getElementById('seuraavaButton')
+var tulos = document.getElementById('oikein-vaarin')
+var aloitaPeli = document.getElementById('start')
 
 // Käytetään KysymysIndex laskemaan, monesko kysymys menossa
 var KysymysIndex = 0;
@@ -28,6 +30,20 @@ var Kysymykset = [
     { kysymys: 'Pohjois-Amerikka on pinta-alaltaan maailman toiseksi suurin maanosa.', vastaus: 'tarua', selitys: 'Tarua! Afrikka on pinta-alaltaan maailman toiseksi suurin maanosa!' },
     { kysymys: 'Ekvaattori on toinen nimitys päiväntasaajalle.', vastaus: 'totta', selitys: 'Totta, ekvaattori on toinen nimitys päiväntasaajalle!' },
 ];  
+
+
+// Funktio pelin aloittamiselle - piilotetaan aloitusnappi sekä pelin ohje, sekä näytetään kaikki tarvittavat pelin osat.
+function startGame() {
+
+    aloitaPeli.style.display = 'none';
+    document.getElementById('kysymys').style.display = 'inline';
+    document.getElementById('kysymysTotta').style.display = 'inline';
+    document.getElementById('kysymysTarua').style.display = 'inline';
+    document.getElementById('pelinOhje').style.display = 'none';
+}
+
+
+
 
 // Luodaan funktio, joka näyttää kysymykset järjestyksessä, ja piilottaa totta - ja tarua -napit kysymysten päätyttyä.
 function seuraavaKysymys() {
@@ -53,9 +69,9 @@ function seuraava() {
     document.getElementById('kysymysTotta').style.display = 'inline';
     document.getElementById('kysymysTarua').style.display = 'inline';
     
-    // selitys sekä seuraava- nappi poistetaan näkyvistä pelin selkeyttämiseksi
+    // selitys sekä seuraava- nappi + tulos poistetaan näkyvistä pelin selkeyttämiseksi
     selitys.style.display = 'none';
-
+    tulos.style.display = 'none';
     nextButton.style.display = 'none';
 
     
@@ -68,15 +84,18 @@ function vastaus(kayttajanVastaus) {
     if (kayttajanVastaus === oikeaVastaus) {
         pisteet++;
         document.getElementById('pisteet').innerText = "Pisteet: " + pisteet;
-        alert("Oikein!");
+        tulos.innerText = "Oikein! +1p"
+        tulos.style.color = 'green';
     } else {
-        alert("Väärin!");
+        tulos.innerText = "Väärin! 0p"
+        tulos.style.color = 'red';
     }
 
     // Oikean vastauksen selitys sekä totta - ja tarua nappejen piilotus + kysymyksen piilotus (seuraava- napin ajaksi)
     var selitysTeksti = Kysymykset[KysymysIndex - 1].selitys;
     selitys.innerText = selitysTeksti;
     selitys.style.display = 'inline';
+    tulos.style.display = 'inline';
     document.getElementById('kysymys').style.display = 'none';
     document.getElementById('kysymysTotta').style.display = 'none'; 
     document.getElementById('kysymysTarua').style.display = 'none';

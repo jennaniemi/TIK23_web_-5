@@ -37,3 +37,19 @@ table tr td {
 #bonus {
     height: 100em;
 }
+
+#sites {
+    width: 32em;
+    border: 1px solid black;
+    color: black;
+}
+
+#sites a {
+    text-decoration: none;
+    font-style: arial;
+    color: inherit;
+}
+
+#sites a:hover {
+    font-weight: bold;
+}

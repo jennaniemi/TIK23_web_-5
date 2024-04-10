@@ -1,10 +1,10 @@
 let num = 0;
 const full = document.querySelector("#full");
 
-function countAll() {
-    let newCorrect = parseInt(full.textContent);
-    newCorrect++;
-    full.innerHTML = newCorrect;
+function countAll() { //funktio 5
+    let newCorrect = parseInt(full.textContent); //nykyisten suoritettujen tehtävien määrä
+    newCorrect++; //määrä kasvaa yhdellä
+    full.innerHTML = newCorrect; //uusi määrä päivitetty
 };
 
 function color() { //funktio 4

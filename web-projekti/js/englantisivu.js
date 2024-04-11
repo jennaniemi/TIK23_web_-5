@@ -1,3 +1,4 @@
+let limit = 3
 let num = 0;
 const full = document.querySelector("#full");
 
@@ -5,6 +6,9 @@ function countAll() { //funktio 5
     let newCorrect = parseInt(full.textContent); //nykyisten suoritettujen tehtävien määrä
     newCorrect++; //määrä kasvaa yhdellä
     full.innerHTML = newCorrect; //uusi määrä päivitetty
+    if (newCorrect === limit) { //jos kaikki tehty
+        alert("All tasks completed!") //ilmoittaa tämän
+    }
 };
 
 function color() { //funktio 4
@@ -74,4 +78,9 @@ const button3 = document.querySelector("#button3");
 const input3 = document.querySelector("#word3");
 const output2 = document.querySelector("#output2");
 const t3 = guess(button3, input3, "potato", 1, output2);
+
+const button4 = document.querySelector("#button4");
+const input4 = document.querySelector("#word4");
+const output3 = document.querySelector("#output3");
+const t4 = guess(button4, input4, "peruna", 1, output3);
 

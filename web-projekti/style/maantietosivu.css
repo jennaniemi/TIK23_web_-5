@@ -65,6 +65,21 @@ body {
     font-weight: 400;
     font-style: normal;
     cursor: pointer;
+    transition: all .4s ease;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px rgba(11, 14, 10, 0.6)
+}
+
+#kysymysTotta:hover {
+    color: green;
+    background-color: rgb(41, 60, 41);
+}
+
+#kysymysTarua:hover {
+    color: red;
+    background-color: rgb(99, 42, 42);
 }
 
 #oikein-vaarin {

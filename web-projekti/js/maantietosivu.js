@@ -47,6 +47,13 @@ function startGame() {
     document.getElementById('pelinOhje').style.display = 'none';
 }
 
+function endGame() {
+    selitys.style.display = 'none';
+    tulos.style.display = 'none';
+    document.getElementById('endGameButton').style.display = 'none';
+    document.getElementById('loppu').innerText = "Kaikki kysymykset kysytty! Pisteesi näet alta.";
+}
+
 
 
 
@@ -58,10 +65,11 @@ function seuraavaKysymys() {
         KysymysIndex++;
     } else {
 
+        document.getElementById('endGameButton').style.display = 'inline';
         document.getElementById('kysymysTotta').style.display = 'none';
         document.getElementById('kysymysTarua').style.display = 'none';
         nextButton.style.display = 'none';
-        document.getElementById('loppu').innerText = "Kaikki kysymykset kysytty! Pisteesi näet alta.";
+
         return;
     }
 }

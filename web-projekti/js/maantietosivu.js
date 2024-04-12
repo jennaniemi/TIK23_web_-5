@@ -47,6 +47,7 @@ function startGame() {
     document.getElementById('pelinOhje').style.display = 'none';
 }
 
+// Pelin lopetuksen funktio
 function endGame() {
     selitys.style.display = 'none';
     tulos.style.display = 'none';
@@ -96,7 +97,7 @@ function vastaus(kayttajanVastaus) {
     var oikeaVastaus = Kysymykset[KysymysIndex - 1].vastaus; 
     if (kayttajanVastaus === oikeaVastaus) {
         pisteet++;
-        document.getElementById('pisteet').innerText = "Pisteet: " + pisteet;
+        document.getElementById('pisteet').innerText = "Pisteet: " + pisteet + "/10";
         tulos.innerText = "Oikein! +1p"
         tulos.style.color = 'green';
     } else {

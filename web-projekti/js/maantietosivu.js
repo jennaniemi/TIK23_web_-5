@@ -29,6 +29,11 @@ var Kysymykset = [
     { kysymys: 'Maa on kolmas planeetta Auringosta katsottuna.', vastaus: 'totta', selitys: 'Totta, Maa on kolmas planeetta Auringosta katsottuna!' },
     { kysymys: 'Pohjois-Amerikka on pinta-alaltaan maailman toiseksi suurin maanosa.', vastaus: 'tarua', selitys: 'Tarua! Afrikka on pinta-alaltaan maailman toiseksi suurin maanosa!' },
     { kysymys: 'Ekvaattori on toinen nimitys päiväntasaajalle.', vastaus: 'totta', selitys: 'Totta, ekvaattori on toinen nimitys päiväntasaajalle!' },
+    { kysymys: 'Bulgarian pääkaupunki on Varna.', vastaus: 'tarua', selitys: 'Tarua, Bulgarian pääkaupunki on Sofia!' },
+    { kysymys: 'Maailman suurin tulivuori sijaitsee Japanissa.', vastaus: 'tarua', selitys: 'Tarua, maailman suurin tulivuori sijaitsee Havaijilla!' },
+    { kysymys: 'Yhdysvallat koostuvat 52 osavaltiosta.', vastaus: 'tarua', selitys: 'Tarua, Yhdysvallat koostuvat 50 osavaltiosta!' },
+    { kysymys: 'Kanadan korkeimman vuoren nimi on Mount Logan.', vastaus: 'totta', selitys: 'Totta, Kanadan korkeimman vuoren nimi on Mount Logan!' },
+    { kysymys: 'Tonava on Euroopan pisin joki.', vastaus: 'tarua', selitys: 'Tarua, Volga on Euroopan pisin joki!' },
 ];  
 
 

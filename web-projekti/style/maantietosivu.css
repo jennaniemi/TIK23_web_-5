@@ -1,6 +1,11 @@
 body {
     background-color: #a8deb3;
-}
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      }
+      
+
 
 #maantieto {
     display: flex;
@@ -8,11 +13,13 @@ body {
     background-color: #80b18b;
     padding: 30px;
     border-radius: 25px;
+    color: #273e2c;
 }
 
 #maantieto h1 {
     text-align: center;
     font-size: 2.5em;
+    color: #192b1c;
 }
 
 #maantieto p {
@@ -31,10 +38,12 @@ body {
 
 #peli p {
     font-size: 1.2em;
+    color: #273e2c;
 }
 
 #peli h2 {
     font-size: 2em;
+    color: #192b1c;
 }
 
 #kysymykset div {
@@ -44,23 +53,17 @@ body {
 }
 
 #kysymykset button {
-    padding: 10px;
+    padding: 20px;
     margin: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-style: none;
     font-weight: bold;
-}
-
-#kysymysTotta {
-    background-color: #62db7c;
-}
-
-#kysymysTarua {
-    background-color: #c64141;
-}
-
-#seuraavaButton {
-    background-color: #e1a9dd;
+    background-color: #192b1c;
+    color: #ffffff;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
 }
 
 #oikein-vaarin {
@@ -75,6 +78,7 @@ body {
     padding: 10px;
     margin: 15px;
     border-radius: 25px;
+    color: #273e2c;
 }
 
 

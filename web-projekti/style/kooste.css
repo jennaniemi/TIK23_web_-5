@@ -1,0 +1,23 @@
+#pages {
+    width: 32em;
+    border: 1px solid black;
+    color: black;
+}
+
+#pages a {
+    text-decoration: none;
+    font-style: arial;
+    color: inherit;
+}
+
+#pages a:hover {
+    font-weight: bold;
+}
+
+#infobutton {
+    width: 3.5em;
+}
+
+#infocontent {
+    display: none;
+}

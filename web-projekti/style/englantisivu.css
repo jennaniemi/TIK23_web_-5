@@ -38,18 +38,18 @@ table tr td {
     height: 100em;
 }
 
-#sites {
+#pages {
     width: 32em;
     border: 1px solid black;
     color: black;
 }
 
-#sites a {
+#pages a {
     text-decoration: none;
     font-style: arial;
     color: inherit;
 }
 
-#sites a:hover {
+#pages a:hover {
     font-weight: bold;
 }

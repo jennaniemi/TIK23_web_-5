@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/kooste.css">
     <title>Koostesivu</title>
 </head>
 <body>
-    <!--Kooste sivun pohja-->
+    <div id="pages">
+        <a href="../index.html">Etusivu</a>
+        <a href="..//sivut/englantisivu.html">Englantisivu</a>
+        <a href="../sivut/äidinkielisivu.html">Äidinkielisivu</a>
+        <a href="..//sivut/historiasivu.html">Historiasivu</a>
+        <a href="../sivut/maantietosivu.html">Maantietosivu</a>
+        <a href="..//sivut/matikkasivu.html">Matikkasivu</a>
+        <a href="..//sivut/kooste.html">Koostesivu</a>
+    </div>
+    <div>
+        <h1>Koostesivu</h1>
+    </div>
+    <div>
+        <h2>Kokonaispisteet</h2>
+        <p><output id="pointsall"></output>/x</p>
+        <div>
+            <button id="infobutton">(info)</button>
+            <div id="infocontent">
+                <ul>
+                    <li>äidinkielisivu: <output id="pointsfin"></output>/x</li>
+                    <li>englantisivu: <output id="pointseng"></output>/x</li>
+                    <li>historiasivu: <output id="pointshis"></output>/x</li>
+                    <li>maantietosivu: <output id="pointsgeo"></output>/x</li>
+                    <li>matikkasivu: <output id="pointsmat"></output>/x</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="..//js/kooste.js"></script>
 </body>
 </html>

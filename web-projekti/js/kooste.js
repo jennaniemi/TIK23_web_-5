@@ -15,10 +15,10 @@ infoButton.addEventListener('click', () => {
     } else {
         infoContent.style.display = 'none';
     } 
-})
+});
 
 //calculating points
 function calc(points1, points2, points3, points4, points5, output) {
-    let points = (points1+points2+points3+points4+points5)
-    output.innerhtml = points
-}
+    let points = (points1+points2+points3+points4+points5);
+    output.innerhtml = points;
+};

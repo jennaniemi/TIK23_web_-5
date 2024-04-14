@@ -2,60 +2,66 @@ let limit = 3
 let num = 0;
 const full = document.querySelector("#full");
 
-function countAll() { //funktio 5
-    let newCorrect = parseInt(full.textContent); //nykyisten suoritettujen tehtävien määrä
-    newCorrect++; //määrä kasvaa yhdellä
-    full.innerHTML = newCorrect; //uusi määrä päivitetty
-    if (newCorrect === limit) { //jos kaikki tehty
-        alert("All tasks completed!") //ilmoittaa tämän
+//amount of tasks
+function countAll() {
+    let newCorrect = parseInt(full.textContent); 
+    newCorrect++; 
+    full.innerHTML = newCorrect; 
+    if (newCorrect === limit) { 
+        alert("All tasks completed!") 
     }
 };
 
-function color() { //funktio 4
-    num++; //numero kasvaa
-    let bar = "#ta" + num;  //luodaan palkin kohdan id
-    const ta = document.querySelector(bar); //haetaan kohta
-    ta.style.backgroundColor = "green"; //kohdan värin vaihto
+//progress bar prosesses
+function color() { 
+    num++; 
+    let bar = "#ta" + num;  
+    const ta = document.querySelector(bar); 
+    ta.style.backgroundColor = "green"; 
 };
 
-function correct(amount, point) { //funktio 3
+//correct answer
+function correct(amount, point) { 
     let currentCount = parseInt(point.textContent);
-    if (currentCount != amount) { //outputissa oleva kirjain luku muutetaan oikeaksi luvuksi ja verrataan tehtävien määrään
-        let correct = currentCount + 1; //jos tehtäviä ei ollut tehty rajattu määrä tehtyjen tehtävien määrä kasvaa
-        point.innerHTML = correct; //output päivittyy
-        alert("correct!"); //palauttaa correctin
-        if (correct === amount) { //jos tehtävän kaikki kohdat on suoritettu
-            color() //palkki etenee
-            countAll() //ratkaistujen tehtävien lukumäärä kasvaa
+    if (currentCount != amount) { 
+        let correct = currentCount + 1; 
+        point.innerHTML = correct; 
+        alert("correct!");
+        if (correct === amount) {
+            color() 
+            countAll() 
         };
     };
 };
 
-function trial(button, inpt, answer, amount, point) { //funktio 2
-    if (inpt === answer) { //trial funktio tarkistaa tehtävän
-        if (!button.dataset.incremented) { //jos tehtävä on mennyt oikein ja nappi ei ole käytetty
-        correct(amount, point); //funktio correct käynnistyy
-        button.dataset.incremented = true; //nappi muuttuu käytetyksi, jolloin ei voi laittaa oikeaa vastausta uudelleen
+//Answer to the guess
+function guessAnswer(button, inpt, answer, amount, point) { 
+    if (inpt === answer) { 
+        if (!button.dataset.incremented) { 
+        correct(amount, point); 
+        button.dataset.incremented = true; 
         };
     } else {
-        alert("false."); //väärä vastaus palauttaa falsen
+        alert("false."); 
     };
 };
 
-function guess(button, inpt, answer, amount, point) { //funktio 1
-    button.addEventListener('click',() => { //nappi, joka on guess funktioon määritelty aktivoi sen
-        trial(button, inpt.value, answer, amount, point); //alkaa uusi trial funktio
+//Guessing the answer
+function guessButton(button, inpt, answer, amount, point) { 
+    button.addEventListener('click',() => { 
+        guessAnswer(button, inpt.value, answer, amount, point); 
     });
 };
 
 const infoButton = document.querySelector("#infobutton") 
 const infoContent = document.querySelector("#infocontent")
 
-infoButton.addEventListener('click', () => { //info nappai painetaan
-    if (infoContent.style.display === 'none') { //jos info ei näy
-        infoContent.style.display = 'block'; //se paljastuu
-    } else { //muuten
-        infoContent.style.display = 'none'; //se menee piiloon
+//info
+infoButton.addEventListener('click', () => { 
+    if (infoContent.style.display === 'none') { 
+        infoContent.style.display = 'block'; 
+    } else { 
+        infoContent.style.display = 'none'; 
     }; 
 });
 
@@ -68,19 +74,19 @@ infoButton.addEventListener('click', () => { //info nappai painetaan
 const button1 = document.querySelector("#button1");
 const input1 = document.querySelector("#word1");
 const output1 = document.querySelector("#output1");
-const t1 = guess(button1, input1, "word", 2, output1);
+const t1 = guessButton(button1, input1, "word", 2, output1);
 
 const button2 = document.querySelector("#button2");
 const input2 = document.querySelector("#word2");
-const t2 = guess(button2, input2, "word", 2, output1);
+const t2 = guessButton(button2, input2, "word", 2, output1);
 
 const button3 = document.querySelector("#button3");
 const input3 = document.querySelector("#word3");
 const output2 = document.querySelector("#output2");
-const t3 = guess(button3, input3, "potato", 1, output2);
+const t3 = guessButton(button3, input3, "potato", 1, output2);
 
 const button4 = document.querySelector("#button4");
 const input4 = document.querySelector("#word4");
 const output3 = document.querySelector("#output3");
-const t4 = guess(button4, input4, "peruna", 1, output3);
+const t4 = guessButton(button4, input4, "peruna", 1, output3);
 

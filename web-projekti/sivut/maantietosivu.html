@@ -43,19 +43,24 @@
         <!--Totta vai tarua peli-->
     <div id="kysymykset">
 
+        <div id="pelinAloitus">
         <button onClick = "startGame()" id="start">Aloita Peli</button>
+        </div>
 
+        <div id="uusiPeliHuom"> <p>Huom. Vanhat pisteesi nollautuvat uuden pelin alkaessa!</p></div>
         <div id="kysymys" style="display: none;"></div>
-        <br>
-        <button onClick="vastaus('totta')"  id="kysymysTotta" style="display: none;" >Totta</button>
-        <button onClick="vastaus('tarua')"  id="kysymysTarua" style="display: none;" >Tarua</button>
+
+        <div id="napit">
+            <button onClick="vastaus('totta')"  id="kysymysTotta" style="display: none;" >Totta</button>
+            <button onClick="vastaus('tarua')"  id="kysymysTarua" style="display: none;" >Tarua</button>
+        </div>
+
         <div id="oikein-vaarin"></div>
-        <br>
-        <br>
         <div id="vastauksen_selitys"></div>
-        <br>
+        <div id="seuraava_lopetus">
         <button onClick="seuraava()" id="seuraavaButton" style="display: none;" >Seuraava</button>
         <button onClick="endGame()" id="endGameButton" style="display: none;" >Päätä peli</button>
+        </div>
         <div id="loppu"></div>
         <div id="pisteet"></div>
     </div>

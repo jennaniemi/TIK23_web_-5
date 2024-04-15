@@ -50,6 +50,7 @@ function startGame() {
     document.getElementById('kysymysTotta').style.display = 'inline';
     document.getElementById('kysymysTarua').style.display = 'inline';
     document.getElementById('pelinOhje').style.display = 'none';
+    document.getElementById('uusiPeliHuom').style.display = 'none';
 }
 
 // Pelin lopetuksen funktio
@@ -68,6 +69,9 @@ var localPisteet = localStorage.getItem('pisteet');
 if (localPisteet !== null) {
     pisteet = localPisteet;
     document.getElementById('pisteet').innerText = "Pisteet: " + pisteet + "/10";
+    document.getElementById('uusiPeliHuom').style.display = 'inline';
+} else {
+    document.getElementById('uusiPeliHuom').style.display = 'none';
 }
 
 
@@ -115,9 +119,11 @@ function vastaus(kayttajanVastaus) {
         document.getElementById('pisteet').innerText = "Pisteet: " + pisteet + "/10";
         tulos.innerText = "Oikein! +1p"
         tulos.style.color = 'green';
+        tulos.style.fontSize = '1.3em';
     } else {
         tulos.innerText = "Väärin! 0p"
         tulos.style.color = 'red';
+        tulos.style.fontSize = '1.3em';
     }
 
     // Oikean vastauksen selitys sekä totta - ja tarua nappejen piilotus + kysymyksen piilotus (seuraava- napin ajaksi)

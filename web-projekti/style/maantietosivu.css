@@ -19,11 +19,11 @@ body {
 
 #maantieto h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #192b1c;
 }
 
-#maantieto p {
+#maantieto > p {
     font-size: 1.5em;
     text-align: center;
 }
@@ -34,28 +34,45 @@ body {
     text-align: center;
     width: 700px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 30px;
 }
 
-#peli p {
-    font-size: 1.2em;
+#peli > p {
+    font-size: 1.3em;
     color: #273e2c;
 }
 
 #peli h2 {
-    font-size: 2em;
+    font-size: 2.4em;
     color: #192b1c;
 }
 
 #kysymykset div {
     padding: 10px;
-    font-size: 1.2em;
-    
 }
 
-#kysymykset button {
+#kysymys, #pisteet, #vastauksen_selitys, #loppu, #uusiPeliHuom {
+    font-size: 1.6em;
+}
+
+
+#kysymykset {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#napit {
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+
+
+button {
     padding: 20px;
     margin: 30px;
+    font-size: 1.2em;
     border-radius: 15px;
     border-style: none;
     font-weight: bold;
@@ -84,7 +101,14 @@ button:hover {
 
 #oikein-vaarin {
     padding: 40px;
+    font-size: 1.3em;
 }
+
+#uusiPeliHuom p {
+    font-size: 0.7em;
+    color: rgb(168, 34, 34);
+}
+
 
 /* Navigaation CSS */
 

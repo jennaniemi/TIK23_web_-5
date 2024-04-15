@@ -8,6 +8,14 @@ const pointsMat = document.querySelector('#pointsmat');
 const infoButton = document.querySelector("#infobutton"); 
 const infoContent = document.querySelector("#infocontent");
 
+
+//points retrieve
+function pointsRetrieve() {
+    let pointsStored = localStorage.getItem('points');
+    pointsStored = parseInt(pointsStored);
+    return pointsStored;
+};
+
 //info
 infoButton.addEventListener('click', () => {
     if (infoContent.style.display === 'none') {

@@ -65,6 +65,18 @@ infoButton.addEventListener('click', () => {
     }; 
 });
 
+//points push
+function pointsCalculate(pointsCurrent) {
+    let pointsStored = localStorage.getItem('points');
+    if (pointsStored === null) {
+        localStorage.setItem('points', pointsCurrent.toString());
+    } else {
+        pointsStored = parseInt(pointsStored);
+        pointsStored += pointsCurrent;
+        localStorage.setItem('points', pointsStored.toString());
+    }
+};
+
 //Template
 //const button<x> = document.querySelector("#button<x>");
 //const input<x> = document.querySelector("#word<x>");

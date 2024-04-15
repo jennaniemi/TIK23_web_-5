@@ -40,6 +40,11 @@ var Kysymykset = [
 // Funktio pelin aloittamiselle - piilotetaan aloitusnappi sekä pelin ohje, sekä näytetään kaikki tarvittavat pelin osat.
 function startGame() {
 
+    localStorage.removeItem('pisteet'); // Poistetaan pisteet local storagesta
+    pisteet = 0;
+
+    document.getElementById('pisteet').innerText = "Pisteet: 0/10";
+
     aloitaPeli.style.display = 'none';
     document.getElementById('kysymys').style.display = 'inline';
     document.getElementById('kysymysTotta').style.display = 'inline';
@@ -53,6 +58,16 @@ function endGame() {
     tulos.style.display = 'none';
     document.getElementById('endGameButton').style.display = 'none';
     document.getElementById('loppu').innerText = "Kaikki kysymykset kysytty! Pisteesi näet alta.";
+
+    // tallennetaan pisteet local storageen
+    localStorage.setItem('pisteet', pisteet)
+}
+
+// Pisteiden haku local storagesta
+var localPisteet = localStorage.getItem('pisteet');
+if (localPisteet !== null) {
+    pisteet = localPisteet;
+    document.getElementById('pisteet').innerText = "Pisteet: " + pisteet + "/10";
 }
 
 

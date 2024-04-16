@@ -1,6 +1,11 @@
+html {
+    background-color: rgba(72, 195, 226, 0.712);
+    font-family: fantasy;
+    color: rgb(3, 57, 65);
+}
+
 .pohja {
     display: grid;
-    background-color: rgb(127, 255, 255);
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 4fr 1fr 1fr;
@@ -12,28 +17,27 @@
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
-    padding-top: 1em;
-    text-align: start;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
     align-items: start;
-    padding-left: 3.5em;
     font-size: 1em;
+    background-color: rgb(74, 181, 207);
+    border-radius: 25px;
 }
 
 .osa {
     display: grid;
     text-align: center;
-    border: 2px solid black;
-    background-color: aquamarine;
     padding: 1em;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: rgba(84, 187, 212, 0.842);
+    border-radius: 15px;
 }
 
 h1 {
     font-size: 3em;
+    letter-spacing: 3px;
 }
 
 #pisteet {
@@ -44,23 +48,3 @@ a {
     text-decoration: none;
     color: black;
 }
-
-
-
-/* Responsiivisuus */
-
-@media only screen and (max-width: 600px) {
-    
-    #osa1 {
-        padding: 0.2em;
-    }
-
-    .osa {
-        font-size: 1em;
-        padding: 0.2em;
-        
-    }
-
-    
-
-  }

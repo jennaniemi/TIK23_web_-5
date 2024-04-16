@@ -8,12 +8,22 @@ const pointsMat = document.querySelector('#pointsmat');
 const infoButton = document.querySelector("#infobutton"); 
 const infoContent = document.querySelector("#infocontent");
 
+let points1 = 'points'
+
+//revealing points
+function pointsReveal(pointsSpecific, pointsOutput) {
+    pointsOutput.innerhtml = pointsSpecific
+};
 
 //points retrieve
-function pointsRetrieve() {
-    let pointsStored = localStorage.getItem('points');
+function pointsRetrieve(pointsStorage, pointsOutput, num) {
+    let pointsStored = localStorage.getItem(pointsStorage);
     pointsStored = parseInt(pointsStored);
-    return pointsStored;
+    if (num === 1) {
+        pointsAll(pointsStored, pointsOutput);
+    } else {
+        pointsReveal(pointsStored, pointsOutput);
+    };
 };
 
 //info
@@ -25,8 +35,11 @@ infoButton.addEventListener('click', () => {
     } 
 });
 
-//calculating points
-function calc(points1, points2, points3, points4, points5, output) {
-    let points = (points1+points2+points3+points4+points5);
-    output.innerhtml = points;
+//calculating all points
+function pointsAll(pointsStored, pointsOutput) {
+    let pointsCount = parseInt(pointsOutput.textContent);
+    pointsCount += pointsStored;
+    pointsReveal(pointsCount, pointsOutput);
 };
+
+pointsRetrieve(points1, pointsEng, 0)

@@ -57,6 +57,9 @@ function startGame() {
 function endGame() {
     document.getElementById('return').style.display = 'inline';
 
+    document.getElementById('pelinAloitus').style.display = 'none';
+    document.getElementById('napit').style.display = 'none';
+    document.getElementById('seuraava_lopetus').style.display = 'none';
     selitys.style.display = 'none';
     tulos.style.display = 'none';
     document.getElementById('endGameButton').style.display = 'none';

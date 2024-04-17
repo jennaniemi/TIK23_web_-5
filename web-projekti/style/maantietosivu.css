@@ -1,26 +1,32 @@
 body {
-    background-color: #a8deb3;
+    background-color: rgba(72, 195, 226, 0.712);
     font-family: "Paytone One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #192b1c;
+    color: #6ba172;
       }
       
-
+#bgcolor {
+    background-color: #92d19c;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px;
+    
+}
 
 #maantieto {
     display: flex;
     flex-direction: column;
-    background-color: #80b18b;
     padding: 30px;
     border-radius: 25px;
-    color: #273e2c;
+    color: #456e4c;
+    margin: 10px;
 }
 
 #maantieto h1 {
     text-align: center;
     font-size: 3.5em;
-    color: #192b1c;
+    color: #4f8f59;
 }
 
 #maantieto > p {
@@ -28,23 +34,33 @@ body {
     text-align: center;
 }
 
+#maantieto hr {
+    width: 70vw;
+    border-color: #4f8f59;
+    
+}
+
 #peli {
+    width: 600px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 700px;
+    background-color: rgba(168, 236, 253, 0.712);
     margin: 0 auto;
     padding: 30px;
+    border-radius: 25px;
+    border: 5px solid #4f8f59;
+    
 }
 
 #peli > p {
     font-size: 1.3em;
-    color: #273e2c;
+    color: #456e4c;
 }
 
 #peli h2 {
     font-size: 2.4em;
-    color: #192b1c;
+    color: #4f8f59;
 }
 
 #kysymykset div {
@@ -76,7 +92,7 @@ button {
     border-radius: 15px;
     border-style: none;
     font-weight: bold;
-    background-color: #192b1c;
+    background-color: #4f8f59;
     color: #ffffff;
     font-family: "Paytone One", sans-serif;
     font-weight: 400;
@@ -90,13 +106,13 @@ button:hover {
 }
 
 #kysymysTotta:hover {
-    color: green;
-    background-color: rgb(41, 60, 41);
+    color: rgb(21, 107, 21);
+    background-color: rgb(106, 207, 106)
 }
 
 #kysymysTarua:hover {
-    color: red;
-    background-color: rgb(99, 42, 42);
+    color: rgb(120, 5, 5);
+    background-color: rgb(206, 62, 62);
 }
 
 #oikein-vaarin {
@@ -113,19 +129,19 @@ button:hover {
 /* Navigaation CSS */
 
 .nav {
-    background-color: #4e7b58;
+    background-color: rgb(59, 147, 170);
     overflow: hidden;
     padding: 10px;
     margin: 15px;
     border-radius: 25px;
-    color: #273e2c;
+    color: #ffffff;
 }
 
 
 .nav a {
     float: left;
     display: block;
-    color: #000000;
+    color: rgb(190, 233, 244);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -133,12 +149,12 @@ button:hover {
 }
 
 .nav a:hover {
-    background-color: #80b18b;
+    background-color: rgb(136, 206, 224);
     border-radius: 10px;
 }
 
 .nav a.active {
-    background-color: #80b18b;
+    background-color: rgb(136, 206, 224);
     border-radius: 10px;
 }
 

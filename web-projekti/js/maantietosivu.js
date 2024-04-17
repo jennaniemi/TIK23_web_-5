@@ -55,6 +55,8 @@ function startGame() {
 
 // Pelin lopetuksen funktio
 function endGame() {
+    document.getElementById('return').style.display = 'inline';
+
     selitys.style.display = 'none';
     tulos.style.display = 'none';
     document.getElementById('endGameButton').style.display = 'none';
@@ -62,6 +64,11 @@ function endGame() {
 
     // tallennetaan pisteet local storageen
     localStorage.setItem('pisteet', pisteet)
+}
+
+// funktio pelin alkuun palaamiselle - käytännössä vain päivittää sivun.
+function returnStart() {
+    window.location.reload();
 }
 
 // Pisteiden haku local storagesta

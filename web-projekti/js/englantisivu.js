@@ -1,5 +1,6 @@
-let limit = 3
+let limit = 4;
 let num = 0;
+let points1 = 'points'
 const full = document.querySelector("#full");
 
 //amount of tasks
@@ -7,6 +8,7 @@ function countAll() {
     let newCorrect = parseInt(full.textContent); 
     newCorrect++; 
     full.innerHTML = newCorrect; 
+    pointsCalculate(newCorrect)
     if (newCorrect === limit) { 
         alert("All tasks completed!") 
     }
@@ -27,10 +29,8 @@ function correct(amount, point) {
         let correct = currentCount + 1; 
         point.innerHTML = correct; 
         alert("correct!");
-        if (correct === amount) {
-            color() 
-            countAll() 
-        };
+        color() 
+        countAll() 
     };
 };
 
@@ -67,13 +67,13 @@ infoButton.addEventListener('click', () => {
 
 //points push
 function pointsCalculate(pointsCurrent) {
-    let pointsStored = localStorage.getItem('points');
+    let pointsStored = localStorage.getItem(points1);
     if (pointsStored === null) {
-        localStorage.setItem('points', pointsCurrent.toString());
+        localStorage.setItem(points1, pointsCurrent.toString());
     } else {
-        pointsStored = parseInt(pointsStored);
+        pointsStored = 0;
         pointsStored += pointsCurrent;
-        localStorage.setItem('points', pointsStored.toString());
+        localStorage.setItem(points1, pointsStored.toString());
     }
 };
 

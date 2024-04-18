@@ -3,6 +3,16 @@ let num = 0;
 let points1 = 'points'
 const full = document.querySelector("#full");
 
+//nav
+function navFunction() {
+    var x = document.getElementById("navigaatio");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+
 //amount of tasks
 function countAll() {
     let newCorrect = parseInt(full.textContent); 

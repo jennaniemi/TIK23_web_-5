@@ -1,3 +1,17 @@
+body {
+    background-color: rgba(72, 195, 226, 0.712);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(3, 57, 65);
+}
+
+#full_content {
+    color: maroon;
+    border: 1em solid chocolate;
+    border-radius: 1em;
+    background-color: chocolate;
+}
+
 #flex {
     display: flex;
 }
@@ -11,12 +25,14 @@
 table {
     display: flex;
     flex: 2;
-    border: 1px solid black;
+    border: 1px solid maroon;
+    border-radius: 1em;
 }
 
 table tr td {
+    border-radius: 1em;
     width: 2.4em;
-    height: 10em;
+    height: 6em;
     background-color: red;
 }
 
@@ -30,8 +46,9 @@ table tr td {
 
 #fullp {
     float: right;
-    border: 1px solid black;
-    width: 1.4em;
+    border: 1px solid maroon;
+    border-radius: 1em;
+    width: 2em;
 }
 
 #bonus {

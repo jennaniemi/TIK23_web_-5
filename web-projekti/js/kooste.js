@@ -11,6 +11,7 @@ const infoContent = document.querySelector("#infocontent");
 pointsAll.innerHTML = 0
 
 let points1 = 'points'
+let points2 = 'pisteet'
 
 //revealing points
 function pointsReveal(pointsSpecific, pointsOutput) {
@@ -49,3 +50,6 @@ function pointsAllCount(pointsStored, pointsOutput) {
 
 pointsRetrieve(points1, pointsEng, 0)
 pointsRetrieve(points1, pointsAll, 1)
+
+pointsRetrieve(points2, pointsGeo, 0)
+pointsRetrieve(points2, pointsAll, 1)

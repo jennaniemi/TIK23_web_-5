@@ -134,10 +134,11 @@ button:hover {
 .nav {
     background-color: rgb(59, 147, 170);
     overflow: hidden;
-    padding: 10px;
+    padding: 15px;
     margin: 15px;
-    border-radius: 25px;
+    border-radius: 20px;
     color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(115, 241, 255, 0.712);
 }
 
 
@@ -147,8 +148,9 @@ button:hover {
     color: rgb(190, 233, 244);
     text-align: center;
     padding: 14px 16px;
+    margin: 4px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .nav a:hover {
@@ -166,33 +168,6 @@ button:hover {
 }
 
 /* Navigaation CSS PÄÄTTYY */
-
-
-
-
-@media only screen and (max-width: 600px) {
-
-    #peli {
-        width: 300px;
-    }
-
-    #bgcolor {
-        
-        margin: 0px;
-        padding: 0px;
-        
-    }
-
-    #maantieto h1 {
-        font-size: 2.7em;
-
-    }
-
-    #peli h2 {
-        font-size: 2em;
-    }
-  }
-  
 
 /* Navigaation responsiivisuus */
 
@@ -220,3 +195,29 @@ button:hover {
     }
   }
 }
+/*Navigaation responsiivisuus PÄÄTTYY */
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #peli {
+        width: 300px;
+    }
+
+    #bgcolor {
+        
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    #maantieto h1 {
+        font-size: 2.7em;
+
+    }
+
+    #peli h2 {
+        font-size: 2em;
+    }
+  }

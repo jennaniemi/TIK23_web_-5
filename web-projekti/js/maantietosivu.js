@@ -10,6 +10,7 @@ function navFunction() {
 }
 
 
+
 // Peli
 
 var pisteet = 0;

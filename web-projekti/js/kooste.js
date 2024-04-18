@@ -48,3 +48,4 @@ function pointsAllCount(pointsStored, pointsOutput) {
 };
 
 pointsRetrieve(points1, pointsEng, 0)
+pointsRetrieve(points1, pointsAll, 1)

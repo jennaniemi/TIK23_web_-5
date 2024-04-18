@@ -175,7 +175,24 @@ button:hover {
     #peli {
         width: 300px;
     }
+
+    #bgcolor {
+        
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    #maantieto h1 {
+        font-size: 2.7em;
+
+    }
+
+    #peli h2 {
+        font-size: 2em;
+    }
   }
+  
 
 /* Navigaation responsiivisuus */
 

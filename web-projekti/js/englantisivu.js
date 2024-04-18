@@ -18,7 +18,7 @@ function countAll() {
     let newCorrect = parseInt(full.textContent); 
     newCorrect++; 
     full.innerHTML = newCorrect; 
-    pointsCalculate(newCorrect)
+    pointsCalculate(newCorrect, points1)
     if (newCorrect === limit) { 
         alert("All tasks completed!") 
     }
@@ -76,14 +76,13 @@ infoButton.addEventListener('click', () => {
 });
 
 //points push
-function pointsCalculate(pointsCurrent) {
-    let pointsStored = localStorage.getItem(points1);
+function pointsCalculate(pointsCurrent, pointsLocal) {
+    let pointsStored = localStorage.getItem(pointsLocal);
     if (pointsStored === null) {
-        localStorage.setItem(points1, pointsCurrent.toString());
+        localStorage.setItem(pointsLocal, pointsCurrent.toString());
     } else {
-        pointsStored = 0;
-        pointsStored += pointsCurrent;
-        localStorage.setItem(points1, pointsStored.toString());
+        pointsStored = pointsCurrent;
+        localStorage.setItem(pointsLocal, pointsStored.toString());
     }
 };
 

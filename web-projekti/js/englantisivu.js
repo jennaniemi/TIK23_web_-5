@@ -92,31 +92,31 @@ function template(number, answer, amount, outputNumber) {
     const button = document.querySelector(buttonTemp);
     let inputTemp = "#input" + number;
     const input = document.querySelector(inputTemp);
-    let outputTemp = "#input" + outputNumber;
+    let outputTemp = "#output" + outputNumber;
     const output = document.querySelector(outputTemp);
     const task = guessButton(button, input, answer, amount, output);
 };
 
-template(1, "word", 5, 1)
-template(2, "word", 5, 1)
-template(3, "word", 5, 1)
-template(4, "word", 5, 1)
-template(5, "word", 5, 1)
-template(6, "word", 5, 2)
-template(7, "word", 5, 2)
-template(8, "word", 5, 2)
-template(9, "word", 5, 2)
-template(10, "word", 5, 2)
-template(11, "word", 5, 3)
-template(12, "word", 5, 3)
-template(13, "word", 5, 3)
-template(14, "word", 5, 3)
-template(15, "word", 5, 3)
-template(16, "word", 5, 4)
-template(17, "word", 5, 4)
-template(18, "word", 5, 4)
-template(19, "word", 5, 4)
-template(20, "word", 5, 4)
+template(1, "koira", 5, 1)
+template(2, "kissa", 5, 1)
+template(3, "mato", 5, 1)
+template(4, "hevonen", 5, 1)
+template(5, "lammas", 5, 1)
+template(6, "potato", 5, 2)
+template(7, "carrot", 5, 2)
+template(8, "tomato", 5, 2)
+template(9, "blueberry", 5, 2)
+template(10, "banana", 5, 2)
+template(11, "sleep", 5, 3)
+template(12, "swim", 5, 3)
+template(13, "climb", 5, 3)
+template(14, "eat", 5, 3)
+template(15, "write", 5, 3)
+template(16, "nukkua", 5, 4)
+template(17, "uida", 5, 4)
+template(18, "kiivetä", 5, 4)
+template(19, "syödä", 5, 4)
+template(20, "kirjoittaa", 5, 4)
 
 
 

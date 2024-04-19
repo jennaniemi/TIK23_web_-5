@@ -37,18 +37,19 @@ table tr td {
 }
 
 #infobutton {
-    width: 3.5em;
+    width: 2.8em;
+    font-size: 1em;
 }
 
 #infocontent {
     display: none;
+    font-size: 1.1em;
 }
 
 #fullp {
     float: right;
     border: 1px solid maroon;
     border-radius: 1em;
-    width: 2em;
 }
 
 #bonus {
@@ -117,6 +118,10 @@ input {
     background-color: rgb(190, 233, 244);
     border-radius: 0.5em;
     width: 20em;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 @media screen and (max-width: 600px) {

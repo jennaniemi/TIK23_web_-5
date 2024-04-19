@@ -48,6 +48,15 @@ function pointsAllCount(pointsStored, pointsOutput) {
     pointsReveal(pointsCount, pointsOutput);
 };
 
+function navFunction() {
+    var x = document.getElementById("navigaatio");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+
 pointsRetrieve(points1, pointsEng, 0)
 pointsRetrieve(points1, pointsAll, 1)
 

@@ -1,17 +1,62 @@
-#pages {
-    width: 36em;
-    border: 1px solid black;
-    color: black;
+.nav {
+    background-color: rgb(59, 147, 170);
+    overflow: hidden;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(115, 241, 255, 0.712);
 }
 
-#pages a {
+
+.nav a {
+    float: left;
+    display: block;
+    color: rgb(190, 233, 244);
+    text-align: center;
+    padding: 14px 16px;
+    margin: 4px;
     text-decoration: none;
-    font-style: arial;
-    color: inherit;
+    font-size: 1.4em;
 }
 
-#pages a:hover {
-    font-weight: bold;
+.nav a:hover {
+    background-color: rgb(136, 206, 224);
+    border-radius: 10px;
+}
+
+.nav a.active {
+    background-color: rgb(136, 206, 224);
+    border-radius: 10px;
+}
+
+.nav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+.nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  }
 }
 
 #infobutton {
@@ -20,4 +65,23 @@
 
 #infocontent {
     display: none;
+}
+
+body {
+    background-color: rgba(72, 195, 226, 0.712);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(3, 57, 65);
+}
+
+#main_content {
+    background-color: rgb(59, 147, 170);
+    color: rgb(190, 233, 244);
+    height: 40em;
+    border-radius: 2em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

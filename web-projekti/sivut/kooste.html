@@ -7,31 +7,37 @@
     <title>Koostesivu</title>
 </head>
 <body>
-    <div id="pages">
+    <div class="nav" id="navigaatio">
         <a href="../index.html">Etusivu</a>
-        <a href="..//sivut/englantisivu.html">Englantisivu</a>
-        <a href="../sivut/äidinkielisivu.html">Äidinkielisivu</a>
-        <a href="..//sivut/historiasivu.html">Historiasivu</a>
-        <a href="../sivut/maantietosivu.html">Maantietosivu</a>
-        <a href="..//sivut/matikkasivu.html">Matikkasivu</a>
-        <a href="..//sivut/kooste.html">Koostesivu</a>
+        <a href="./äidinkielisivu.html">Äikkäpeli</a>
+        <a href="./englantisivu.html">Enkkupeli</a>
+        <a href="./maantietosivu.html">Maantietopeli</a>
+        <a href="./matikkasivu.html">Matikkapeli</a>
+        <a href="./historiasivu.html">Hissapeli</a>
+        <a href="./kooste.html" class="active">Kooste</a>
+        <a href="./infosivu.html">Info</a>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-    <div>
-        <h1>Koostesivu</h1>
-    </div>
-    <div>
-        <h2>Kokonaispisteet</h2>
-        <p><output id="pointsall"></output>/100</p>
+    <div id="main_content">
         <div>
-            <button id="infobutton">(info)</button>
-            <div id="infocontent">
-                <ul>
-                    <li>äidinkielisivu: <output id="pointsfin">0</output>/20</li>
-                    <li>englantisivu: <output id="pointseng">0</output>/20</li>
-                    <li>historiasivu: <output id="pointshis">0</output>/20</li>
-                    <li>maantietosivu: <output id="pointsgeo">0</output>/20</li>
-                    <li>matikkasivu: <output id="pointsmat">0</output>/20</li>
-                </ul>
+            <h1>Koostesivu</h1>
+        </div>
+        <div>
+            <h2>Kokonaispisteet</h2>
+            <p><output id="pointsall"></output>/100</p>
+            <div>
+                <button id="infobutton">(info)</button>
+                <div id="infocontent">
+                    <ul>
+                        <li>äidinkielisivu: <output id="pointsfin">0</output>/20</li>
+                        <li>englantisivu: <output id="pointseng">0</output>/20</li>
+                        <li>historiasivu: <output id="pointshis">0</output>/20</li>
+                        <li>maantietosivu: <output id="pointsgeo">0</output>/20</li>
+                        <li>matikkasivu: <output id="pointsmat">0</output>/20</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

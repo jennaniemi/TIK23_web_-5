@@ -33,33 +33,41 @@ function color() {
 };
 
 //correct answer
-function correct(amount, output) { 
+function correct(amount, output, img) { 
     let currentCount = parseInt(output.textContent);
     if (currentCount != amount) { 
         let correct = currentCount + 1; 
         output.innerHTML = correct; 
-        alert("correct!");
+        imgType(img, '../kuvat/englanti sivun kuvat/correct.png', 'correct answer')
         color() 
         countAll() 
     };
 };
 
+//img type
+function imgType(img, type, alter) {
+    img.src = type
+    img.alt = alter
+} 
+
 //Answer to the guess
-function guessAnswer(button, input, answer, amount, output) { 
+function guessAnswer(button, input, answer, amount, output, img) { 
     if (input === answer) { 
         if (!button.dataset.incremented) { 
-        correct(amount, output); 
+        correct(amount, output, img); 
         button.dataset.incremented = true; 
         };
+    } else if (input === "") {
+        imgType(img, '../kuvat/englanti sivun kuvat/noanswer.png', 'no answer')
     } else {
-        alert("false."); 
+        imgType(img, '../kuvat/englanti sivun kuvat/incorrect.png', 'incorrect answer')
     };
 };
 
 //Guessing the answer
-function guessButton(button, input, answer, amount, output) { 
+function guessButton(button, input, answer, amount, output, img) { 
     button.addEventListener('click',() => { 
-        guessAnswer(button, input.value, answer, amount, output); 
+        guessAnswer(button, input.value, answer, amount, output, img); 
     });
 };
 
@@ -94,7 +102,9 @@ function template(number, answer, amount, outputNumber) {
     const input = document.querySelector(inputTemp);
     let outputTemp = "#output" + outputNumber;
     const output = document.querySelector(outputTemp);
-    const task = guessButton(button, input, answer, amount, output);
+    let imgTemp = "#img" + number;
+    const img = document.querySelector(imgTemp);
+    const task = guessButton(button, input, answer, amount, output, img);
 };
 
 template(1, "koira", 5, 1)

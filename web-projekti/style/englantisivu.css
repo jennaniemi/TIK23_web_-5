@@ -56,7 +56,11 @@ table tr td {
     height: 100em;
 }
 
-
+img {
+    margin-left: 0.3em;
+    width: 1em;
+    height: auto;
+}
 
 .nav {
     background-color: rgb(59, 147, 170);

@@ -50,7 +50,36 @@
   background-color: rgb(55, 180, 208);
   border-radius: 25px;
   color: rgb(190, 233, 244);
-  padding-bottom: 0%;
+}
+
+.jenna {
+    background-color: rgb(119, 189, 198);
+    border-radius: 3px;
+}
+
+.minttu {
+    background-color: rgb(119, 189, 198);
+    border-radius: 3px;
+}
+
+.leevi {
+    background-color: rgb(119, 189, 198);
+    border-radius: 3px;
+}
+
+.eetu {
+    background-color: rgb(119, 189, 198);
+    border-radius: 3px;
+}
+
+.paulus {
+    background-color: rgb(119, 189, 198);
+    border-radius: 3px;
+}
+
+.tietoa {
+    background-color:rgb(119, 189, 198);
+    border-radius: 3px;
 }
 
 body {

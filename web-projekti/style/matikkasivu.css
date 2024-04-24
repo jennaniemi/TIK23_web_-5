@@ -6,11 +6,12 @@ body {
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(127, 161, 255);
     margin: 20px;
     padding: 20px;
     color: rgb(64, 83, 133);
-    text-align: center;
     border-radius: 20px;
     min-height: 60vh;
 }
@@ -24,12 +25,13 @@ h1 {
 input {
     border-radius: 8px;
     padding: 3px;
+    margin: 3px;
     text-align: center;
 }
 
 button {
     padding: 3px;
-    border-radius: 3px;
+    border-radius: 8px;
     background-color: #ffffff;
 }
 

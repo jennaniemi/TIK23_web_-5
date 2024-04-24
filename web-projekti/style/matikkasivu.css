@@ -21,6 +21,18 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+input {
+    border-radius: 8px;
+    padding: 3px;
+    text-align: center;
+}
+
+button {
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
 .nav {
     background-color: rgb(59, 147, 170);
     overflow: hidden;

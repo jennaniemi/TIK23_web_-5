@@ -32,7 +32,7 @@ table {
 table tr td {
     border-radius: 1em;
     width: 2.4em;
-    height: 6em;
+    height: 5em;
     background-color: red;
 }
 
@@ -50,10 +50,6 @@ table tr td {
     float: right;
     border: 1px solid maroon;
     border-radius: 1em;
-}
-
-#bonus {
-    height: 100em;
 }
 
 img {
@@ -151,4 +147,12 @@ h1 {
         text-align: left;
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+    button:hover {
+        font-weight: 600;
+        border: 1px solid maroon;
+        background-color: maroon;
+    }
 }

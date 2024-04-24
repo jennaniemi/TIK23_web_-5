@@ -121,12 +121,12 @@ template(11, "sleep", 5, 3)
 template(12, "swim", 5, 3)
 template(13, "climb", 5, 3)
 template(14, "eat", 5, 3)
-template(15, "write", 5, 3)
+template(15, "fly", 5, 3)
 template(16, "nukkua", 5, 4)
 template(17, "uida", 5, 4)
 template(18, "kiivetä", 5, 4)
 template(19, "syödä", 5, 4)
-template(20, "kirjoittaa", 5, 4)
+template(20, "lentää", 5, 4)
 
 
 

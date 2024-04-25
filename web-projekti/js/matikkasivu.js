@@ -4,6 +4,10 @@ let kokonaispisteet = 0;
 
 pointsCalculate(kokonaispisteet, pisteet);
 
+if (kokonaispisteet === 0) {
+    document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/5";
+}
+
 laskut.forEach(laskut => {
     // Valitaan nykyisen laskun nappi
     const button = laskut.querySelector('button');

@@ -3,7 +3,7 @@ let pisteet = "pisteetmatikka";
 let kokonaispisteet = 0;
 
 if (kokonaispisteet === 0) {
-    document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/10";
+    document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/20";
 }
 
 function squareRoot(x) {
@@ -41,7 +41,7 @@ laskut.forEach(laskut => {
             if (parseInt(inputValue) === result) {
                 alert('Oikein!');
                 kokonaispisteet++;
-                document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/10";
+                document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/20";
                 
                 // Jos kysymys on oikein, otetaan nappi pois käytöstä estääksemme ylimääräisten pisteiden kerääminen
                 button.disabled = true;

@@ -35,6 +35,10 @@ button {
     background-color: #ffffff;
 }
 
+div#pisteet {
+    padding-top: 10px;
+}
+
 .nav {
     background-color: rgb(59, 147, 170);
     overflow: hidden;

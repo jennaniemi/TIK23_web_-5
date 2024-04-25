@@ -63,10 +63,10 @@ pointsRetrieve(points2, pointsGeo, 0)
 pointsRetrieve(points2, pointsAll, 1)
 
 pointsRetrieve(points3, pointsFin, 0)
-pointsRetrieve(points3, pointsFin, 1)
+pointsRetrieve(points3, pointsAll, 1)
 
 pointsRetrieve(points4, pointsHis, 0)
-pointsRetrieve(points4, pointsHis, 1)
+pointsRetrieve(points4, pointsAll, 1)
 
 pointsRetrieve(points5, pointsMat, 0)
-pointsRetrieve(points5, pointsMat, 1)
+pointsRetrieve(points5, pointsAll, 1)

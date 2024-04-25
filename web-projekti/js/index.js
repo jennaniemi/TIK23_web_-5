@@ -40,6 +40,9 @@ function navFunction() {
 
 pointsRetrieve(points1, pointsAll, 1)
 pointsRetrieve(points2, pointsAll, 1)
+pointsRetrieve(points3, pointsFin, 1)
+pointsRetrieve(points4, pointsHis, 1)
+pointsRetrieve(points5, pointsMat, 1)
 
 
 function navFunction() {

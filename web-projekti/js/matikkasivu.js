@@ -2,8 +2,6 @@ const laskut = document.querySelectorAll('.laskut');
 let pisteet = "pisteetmatikka";
 let kokonaispisteet = 0;
 
-pointsCalculate(kokonaispisteet, pisteet);
-
 if (kokonaispisteet === 0) {
     document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/5";
 }
@@ -34,6 +32,7 @@ laskut.forEach(laskut => {
                 document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/5";
                 // Jos kysymys on oikein, otetaan nappi pois käytöstä estääksemme ylimääräisten pisteiden kerääminen
                 button.disabled = true;
+                pointsCalculate(kokonaispisteet, pisteet);
             } else {
                 alert('Väärin, yritä uudelleen.');
                 inputField.value = ''; //Puhdistetaan input- kenttä valmiíksi jotta on helpompi arvata uudelleen

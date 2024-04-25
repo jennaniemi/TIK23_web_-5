@@ -8,10 +8,10 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(127, 161, 255);
+    background-color: rgb(111, 139, 216);
     margin: 20px;
     padding: 20px;
-    color: rgb(64, 83, 133);
+    color: rgb(236, 236, 236);
     border-radius: 20px;
     min-height: 60vh;
 }

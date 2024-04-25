@@ -3,7 +3,11 @@ let pisteet = "pisteetmatikka";
 let kokonaispisteet = 0;
 
 if (kokonaispisteet === 0) {
-    document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/5";
+    document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/10";
+}
+
+function squareRoot(x) {
+    return Math.sqrt(x);
 }
 
 laskut.forEach(laskut => {
@@ -23,13 +27,22 @@ laskut.forEach(laskut => {
             // Suoritetaan lasku
             const labelText = laskut.querySelector('label').textContent;
             const calculation = labelText.split('=')[0].trim();
-            const result = eval(calculation);
+            
+            // Korvataan potenssit (^) ja neliöjuuret (√) niiden vastaavilla operaatioilla
+            const calculationWithPower = calculation.replace(/\^/g, '**');
+            const calculationWithSquareRoot = calculationWithPower.replace(/√(\d+)/g, 'squareRoot($1)');
+
+            // Lasketaan tulos eval-funktiolla
+            const result = eval(calculationWithSquareRoot);
+            console.log(`Lasku: ${calculation}, Tulos: ${result}`);
+            
             
             // Vertaillaan käyttäjän antamaa arvoa ja oikeaa vastausta
             if (parseInt(inputValue) === result) {
                 alert('Oikein!');
                 kokonaispisteet++;
-                document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/5";
+                document.getElementById('pisteet').innerText = "Pisteet: " + kokonaispisteet + "/10";
+                
                 // Jos kysymys on oikein, otetaan nappi pois käytöstä estääksemme ylimääräisten pisteiden kerääminen
                 button.disabled = true;
                 pointsCalculate(kokonaispisteet, pisteet);

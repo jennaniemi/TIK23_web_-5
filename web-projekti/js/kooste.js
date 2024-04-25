@@ -12,6 +12,9 @@ pointsAll.innerHTML = 0
 
 let points1 = 'points'
 let points2 = 'pisteet'
+let points3 = 'pisteetaikka'
+let points4 = 'pisteethistoria'
+let points5 = 'pisteetmatikka'
 
 //revealing points
 function pointsReveal(pointsSpecific, pointsOutput) {
@@ -62,3 +65,12 @@ pointsRetrieve(points1, pointsAll, 1)
 
 pointsRetrieve(points2, pointsGeo, 0)
 pointsRetrieve(points2, pointsAll, 1)
+
+pointsRetrieve(points3, pointsFin, 0)
+pointsRetrieve(points3, pointsFin, 1)
+
+pointsRetrieve(points4, pointsHis, 0)
+pointsRetrieve(points4, pointsHis, 1)
+
+pointsRetrieve(points5, pointsMat, 0)
+pointsRetrieve(points5, pointsMat, 1)

@@ -155,4 +155,9 @@ h1 {
         border: 1px solid maroon;
         background-color: maroon;
     }
+    button:active {
+        font-weight: 1200;
+        background-color: saddlebrown;
+        border: saddlebrown;
+    }
 }

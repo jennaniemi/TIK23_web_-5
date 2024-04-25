@@ -121,4 +121,9 @@ h2 {
         border: 1px solid rgb(190, 233, 244);
         background-color: rgb(190, 233, 244);
     }
+    button:active {
+        font-weight: 1200;
+        background-color: rgba(115, 241, 255, 0.712);
+        border: rgba(115, 241, 255, 0.712);
+    }
 }

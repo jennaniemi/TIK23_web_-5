@@ -61,10 +61,16 @@
 
 #infobutton {
     width: 3.5em;
+    font-size: 1.5em;
 }
 
 #infocontent {
     display: none;
+    font-size: 1.5em;
+}
+
+#infocontent.active {
+    display: block;
 }
 
 body {
@@ -125,5 +131,12 @@ h2 {
         font-weight: 1200;
         background-color: rgba(115, 241, 255, 0.712);
         border: rgba(115, 241, 255, 0.712);
+    }
+    #infobutton {
+        font-size: 1em;
+    }
+    
+    #infocontent {
+        font-size: 1em;
     }
 }

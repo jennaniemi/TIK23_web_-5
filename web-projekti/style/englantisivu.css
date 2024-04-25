@@ -46,6 +46,10 @@ table tr td {
     font-size: 1.1em;
 }
 
+#infocontent.active {
+    display: block;
+}
+
 #fullp {
     float: right;
     border: 1px solid maroon;

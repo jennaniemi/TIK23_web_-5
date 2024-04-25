@@ -76,11 +76,7 @@ const infoContent = document.querySelector("#infocontent")
 
 //info
 infoButton.addEventListener('click', () => { 
-    if (infoContent.style.display === 'none') { 
-        infoContent.style.display = 'block'; 
-    } else { 
-        infoContent.style.display = 'none'; 
-    }; 
+    infoContent.classList.toggle('active')
 });
 
 //points push

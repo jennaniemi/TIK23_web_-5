@@ -37,11 +37,7 @@ function pointsRetrieve(pointsStorage, pointsOutput, num) {
 
 //info
 infoButton.addEventListener('click', () => {
-    if (infoContent.style.display === 'none') {
-        infoContent.style.display = 'block';
-    } else {
-        infoContent.style.display = 'none';
-    } 
+    infoContent.classList.toggle('active')
 });
 
 //calculating all points

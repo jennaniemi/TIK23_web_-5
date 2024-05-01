@@ -15,7 +15,6 @@ body {
     box-shadow: 5px 5px 10px rgba(115, 241, 255, 0.712);
 }
 
-
 .nav a {
     float: left;
     display: block;
@@ -25,21 +24,6 @@ body {
     margin: 4px;
     text-decoration: none;
     font-size: 1.4em;
-}
-
-.container {
-    color: white; 
-    border: 4px solid white;
-    border-radius: 2em;
-    background-color: rgb(70, 130, 180); 
-    font-size: 1.3em;
-}
-
-.otsikko {
-    color: white; 
-    font-size: 1.5em; 
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .nav a:hover {
@@ -52,6 +36,47 @@ body {
     border-radius: 10px;
 }
 
-.nav .icon {
-    display: none;
+.container {
+    color: white;
+    border: 4px solid white;
+    border-radius: 2em;
+    background-color: rgb(70, 130, 180);
+    font-size: 1.3em;
+    display: grid;
+    gap: 30px; /* Lisää välistys sarakkeiden välille */
+    text-align: center;
 }
+
+.otsikko {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    
+}
+
+.tavutus button,
+#sanaluokat button {
+    font-size: 1.2em; /* Fonttikoko */
+    padding: 8px 16px; /* Sisätila */
+    border-radius: 5px; /* Pyöristetyt reunat */
+    background-color: rgb(59, 117, 165); /* Taustaväri */
+    color: white; /* Tekstin väri */
+    cursor: pointer; /* Osoitin muuttuu käsiksi */
+    transition: background-color 0.3s ease; /* Sulava värien vaihtuminen */
+    
+}
+
+.tavutus input[type="text"],
+#sanaluokat input[type="text"] {
+    font-size: 1.2em; /* Fonttikoko */
+    padding: 4px; /* Sisennys sisätilaa varten */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Reunaviiva */
+    border-radius: 5px; /* Pyöristetyt reunat */
+    width: 300px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+

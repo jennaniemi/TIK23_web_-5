@@ -1,3 +1,6 @@
+
+
+
 function pointsCalculate(pointsCurrent, pointsLocal) {
     let pointsStored = localStorage.getItem(pointsLocal);
     if (pointsStored === null) {

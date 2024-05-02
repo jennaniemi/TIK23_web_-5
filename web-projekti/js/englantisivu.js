@@ -76,7 +76,7 @@ const infoContent = document.querySelector("#infocontent")
 
 //info
 infoButton.addEventListener('click', () => { 
-    infoContent.classList.toggle('active')
+    infoContent.classList.toggle('active');
 });
 
 //points push

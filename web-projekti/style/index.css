@@ -18,6 +18,15 @@ html {
     min-height: 60vh;
 }
 
+form {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#firstname {
+    padding: 3px;
+}
+
 h1 {
     font-size: 4em;
     font-weight: bold;

@@ -1,4 +1,5 @@
 const pointsAll = document.querySelector('#pointsall');
+const show = document.getElementById("show");
 
 pointsAll.innerHTML = 0
 
@@ -56,3 +57,33 @@ function navFunction() {
         x.className = "nav";
     }
 }
+
+let nimi = "nimi"
+
+function showTrue(value){
+    if (value === true) {
+    document.getElementById("namefield").hidden = true
+    }
+} 
+
+function showName(e){
+    var firstName= document.getElementById("firstname").value;
+    show.innerText = firstName;
+    showTrue(showName)
+}
+
+
+function nameLocate(nimi) {
+    nameStored = localStorage.getItem(nimi);
+    if (isNaN(nameStored)) {
+        nameStored = "";
+        show.innerText = nameStored;
+    } else {
+        show.innerText = nameStored;
+        showName(e)
+    }
+}
+
+pointsCalculate(firstName, nimi)
+
+nameLocate(nimi)

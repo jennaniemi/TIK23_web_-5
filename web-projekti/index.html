@@ -18,7 +18,12 @@
         <a href="./sivut/infosivu.html">Info</a>
     </div>
     <div id="container">
-        <h1>Tervetuloa: Teppo Testaaja</h1>
+        <form id="namefield">
+            <label>Anna nimesi:</label>
+            <input type= "text" id="firstname" name="firstname">
+            <input type = "button" onclick="showName()" value="submit">
+        </form>
+        <h1>Tervetuloa: <output id="show"></output></h1>
         <label id="pisteet">Pisteet: <output id="pointsall"></output></label>
         <p>
             Hei! Tämän sivusto on luotu yhdessä ryhmäprojektina meidän Web- projekti kurssia varten. Sivun tarkoituksena on jokaisella luoda oma sivu ja myös "pelillistää" se. 

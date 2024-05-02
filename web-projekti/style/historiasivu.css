@@ -13,6 +13,9 @@ body {
     border-radius: 20px;
     color: #ffffff;
     box-shadow: 5px 5px 10px rgba(115, 241, 255, 0.712);
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -69,3 +72,29 @@ hr {
     z-index: 999;
 }
 
+/* Navigaation responsiivisuus */
+
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+.nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  }
+}

@@ -1,4 +1,13 @@
+/* Funktio responsiiviselle navigaatiolle (lisätään luokan nimen perään responsive - loput muokkaukset media queryssä*/
 
+function navFunction() {
+    var x = document.getElementById("navigaatio");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
 var points = 0
 
 // Funktio laskee pisteet väliaikaiseen tallennustilaan ja lisää ne kooste-sivulle, jos vastaus on oikea

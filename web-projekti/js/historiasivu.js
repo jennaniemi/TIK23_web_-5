@@ -31,7 +31,7 @@ buttons.forEach(function(button, index) {
             case 1:
                 // Tarkistetaan vastaus ensimmäiseen kysymykseen ja lisätään pisteitä tarvittaessa
                 if (document.querySelector('input[name="question1"]:checked').value === '1918') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -42,7 +42,7 @@ buttons.forEach(function(button, index) {
             case 2:
                 // Tarkistetaan vastaus toiseen kysymykseen ja lisätään pisteitä tarvittaessa, kaikissa lopuissa caseissa toistuu sama
                 if (document.querySelector('input[name="question2"]:checked').value === 'Washington') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -52,7 +52,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 3:
                 if (document.querySelector('input[name="question3"]:checked').value === 'SIJ') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -62,7 +62,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 4:
                 if (document.querySelector('input[name="question4"]:checked').value === '4653') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -72,7 +72,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 5:
                 if (document.querySelector('input[name="question5"]:checked').value === 'orjuus') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -82,7 +82,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 6:
                 if (document.querySelector('input[name="question6"]:checked').value === 'normannit') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -92,7 +92,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 7:
                 if (document.querySelector('input[name="question7"]:checked').value === 'alueet') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -102,7 +102,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 8:
                 if (document.querySelector('input[name="question8"]:checked').value === 'Curie') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -112,7 +112,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 9:
                 if (document.querySelector('input[name="question9"]:checked').value === 'Augustulus') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -122,7 +122,7 @@ buttons.forEach(function(button, index) {
                 break;
             case 10:
                 if (document.querySelector('input[name="question10"]:checked').value === 'ydinase') {
-                    points++
+                    points += 2
                     pointsCalculate(points, 'pisteethistoria');
                     alert("Oikein!");
                     updatePoints();
@@ -142,7 +142,7 @@ buttons.forEach(function(button, index) {
 // Päivitetään pisteet sivulla, etsitään HTML-elementti johon pistetiedot päivitetään ja näytetään teksti pisteiden määrästä
 function updatePoints() {
     var pistetiedot = document.getElementById('pistetiedot');
-    pistetiedot.textContent = "Pisteet: " + points + "/10"; }
+    pistetiedot.textContent = "Pisteet: " + points + "/20"; }
 
 // Etsitään päivitysnappi
 var refreshButton = document.getElementById('refreshButton');

@@ -52,11 +52,16 @@ for (let i = 0; i < tavutusVastaukset.length; i++) {
         console.log(`Odotettu vastaus: "${tavutusVastaukset[i]}"`);
         if (vastaus === tavutusVastaukset[i]) {
             alert('Oikein!');
+            kokonaispisteet++
+            pistemäärä.innerHTML = kokonaispisteet
+            pointsCalculate(kokonaispisteet, pisteet)
         } else {
             alert('Väärin!');
         }
     });
 }
+
+const pistemäärä = document.querySelector("#pistemäärä")
 
 // Sanaluokkatehtävät
 const sanaluokkaVastaukset = [
@@ -81,8 +86,13 @@ for (let i = 0; i < sanaluokkaVastaukset.length; i++) {
         const vastaus = inputElement.value.trim().toLowerCase();
         if (vastaus === sanaluokkaVastaukset[i]) {
             alert('Oikein!');
+            kokonaispisteet++
+            pistemäärä.innerHTML = kokonaispisteet
+            pointsCalculate(kokonaispisteet, pisteet)
+            
         } else {
             alert('Väärin!');
         }
     });
 }
+

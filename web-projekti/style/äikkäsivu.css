@@ -49,7 +49,7 @@ body {
     background-color: rgb(70, 130, 180);
     font-size: 1.3em;
     display: grid;
-    gap: 30px; /* Lisää välistys sarakkeiden välille */
+    gap: 30px; 
     text-align: center;
 }
 
@@ -62,22 +62,22 @@ body {
 
 .tavutus button,
 #sanaluokat button {
-    font-size: 1.2em; /* Fonttikoko */
-    padding: 8px 16px; /* Sisätila */
-    border-radius: 5px; /* Pyöristetyt reunat */
-    background-color: rgb(59, 117, 165); /* Taustaväri */
-    color: white; /* Tekstin väri */
-    cursor: pointer; /* Osoitin muuttuu käsiksi */
-    transition: background-color 0.3s ease; /* Sulava värien vaihtuminen */
+    font-size: 1.2em; 
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    background-color: rgb(59, 117, 165); 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
     
 }
 
 .tavutus input[type="text"],
 #sanaluokat input[type="text"] {
-    font-size: 1.2em; /* Fonttikoko */
-    padding: 4px; /* Sisennys sisätilaa varten */
-    border: 2px solid rgba(0, 0, 0, 0.5); /* Reunaviiva */
-    border-radius: 5px; /* Pyöristetyt reunat */
+    font-size: 1.2em; 
+    padding: 4px; 
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px; 
     width: 300px;
     margin-bottom: 20px;
     
@@ -111,3 +111,4 @@ body {
     }
   }
 }
+

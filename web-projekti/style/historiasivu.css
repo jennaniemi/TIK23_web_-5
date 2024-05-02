@@ -69,3 +69,11 @@ hr {
     z-index: 999;
 }
 
+button {
+    background-color: #e5d7c0;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    color: rgb(126, 96, 63);
+    text-decoration: none;
+    cursor: pointer;
+}

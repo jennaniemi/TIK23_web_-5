@@ -105,4 +105,10 @@ button {
     text-decoration: none;
     cursor: pointer;
 }
+<<<<<<< HEAD
+
+button:hover {
+    background-color: rgb(212, 187, 161);
+=======
+>>>>>>> 38b7212180cf03ad5df0016fb3a7756e306b231d
 }

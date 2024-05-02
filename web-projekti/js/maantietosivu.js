@@ -126,9 +126,9 @@ function seuraava() {
 function vastaus(kayttajanVastaus) {
     var oikeaVastaus = Kysymykset[KysymysIndex - 1].vastaus; 
     if (kayttajanVastaus === oikeaVastaus) {
-        pisteet++;
-        document.getElementById('pisteet').innerText = "Pisteet: " + pisteet + "/10";
-        tulos.innerText = "Oikein! +1p"
+        pisteet+=2;
+        document.getElementById('pisteet').innerText = "Pisteet: " + pisteet + "/20";
+        tulos.innerText = "Oikein! +2p"
         tulos.style.color = 'green';
         tulos.style.fontSize = '1.3em';
     } else {
